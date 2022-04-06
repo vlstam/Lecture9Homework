@@ -19,6 +19,8 @@ public class Homework {
             case "other":
                  price = price - price*0.05;
                 break;
+                default:
+                "Invalid input!"
         }
         System.out.printf("The price of the product is %.2f", price);
     }
