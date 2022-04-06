@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Homework {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String product;
+        double price;
+        System.out.println("Please enter product: ");
+        product = scanner.next();
+        System.out.println("Please enter price: ");
+        price = scanner.nextFloat();
+        switch (product){
+            case "clothes":
+               price =  price - price*0.2;
+               break;
+            case "shoes":
+                  price = price - price*0.1;
+                break;
+            case "other":
+                 price = price - price*0.05;
+                break;
+        }
+        System.out.printf("The price of the product is %.2f", price);
+    }
+}
